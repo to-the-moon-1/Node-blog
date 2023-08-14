@@ -6,7 +6,7 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const createPath = (page) => path.resolve(__dirname, 'ejs-views', `${page}.ejs`);
 
