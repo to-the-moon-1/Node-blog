@@ -84,3 +84,5 @@ app.use((req, res) => {
     .status(404)
     .render(createPath('error'), { title });
 });
+
+app.use(express.static(__dirname + "/styles/"));
